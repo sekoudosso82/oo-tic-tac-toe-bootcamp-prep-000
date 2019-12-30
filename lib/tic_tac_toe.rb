@@ -66,8 +66,9 @@ WIN_COMBINATIONS=[
           win_index_1 = combination[0]
           win_index_2 = combination[1]
           win_index_3 = combination[2]
-          @board[win_index_1] == "X" && @board[win_index_2] == "X" && @board[win_index_3] == "X" || @board[win_index_1] == "O" && @board[win_index_2] == "O" && @board[win_index_3] == "O"
-          return combination 
+          if @board[win_index_1] == "X" && @board[win_index_2] == "X" && @board[win_index_3] == "X" || @board[win_index_1] == "O" && @board[win_index_2] == "O" && @board[win_index_3] == "O"
+          return combination
+       end 
         end 
     end
    
