@@ -86,8 +86,9 @@ WIN_COMBINATIONS=[
   end
 
   def winner
-    combo = won?
+    if combo = won?
     return @board[combo[0]]
+  end 
   end
 
   def play
