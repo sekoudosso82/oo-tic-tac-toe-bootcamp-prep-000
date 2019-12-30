@@ -70,6 +70,7 @@ WIN_COMBINATIONS=[
           return combination
        end 
         end 
+        false 
     end
    
   def full?
